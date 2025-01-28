@@ -1,7 +1,7 @@
 <template>
     <div>
         <nuxt-link to="/">Home</nuxt-link>
-        Test
+        <h1>Test page</h1>
     </div>
 </template>
 
