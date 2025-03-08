@@ -184,7 +184,7 @@
    display: inline-block;
  }
  #about_section ul li span {
-   background: #f8efba;
+   background: #9D4C36;
    display: inline-block;
    padding: 5px 10px;
    font-size: 14px;
@@ -192,7 +192,7 @@
    margin-top: 5px;
    border-radius: 4px;
    transition: 0.6s;
-   color: #182c61;
+   color: #fff;
  }
  #about_section ul li span:hover {
    color: #111;
