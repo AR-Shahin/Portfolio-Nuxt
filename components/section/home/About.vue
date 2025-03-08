@@ -24,9 +24,9 @@
                <div class="col-12">
                  <nav>
                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                     <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">About Me</button>
-                     <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Skills</button>
-                     <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                     <button class="nav-link abt_btn active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">About Me</button>
+                     <button class="nav-link abt_btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Skills</button>
+                     <button class="nav-link abt_btn" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
                    </div>
                  </nav>
                  <div class="tab-content" id="nav-tabContent">
@@ -51,11 +51,24 @@
                        <div class="card-body">
                          <div class="row">
                            <div class="col-12 col-md-3 text-left">
-                             <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                               <button v-for="(category, index) in Object.keys(skills)" :key="category" class="nav-link text-left" :class="{ 'active': index === 0 }" :id="`v-pills-${category}-tab`" data-bs-toggle="pill" :data-bs-target="`#v-pills-${category}`" role="tab" :aria-controls="`v-pills-${category}`" :aria-selected="index === 0">
-                                 {{ category.charAt(0).toUpperCase() + category.slice(1) }}
-                               </button>
-                             </div>
+                            <div class="nav flex-column nav-pills">
+                              <div class="row">
+                                <div v-for="(category, index) in Object.keys(skills)" :key="category" class="col-md-12 col-4">
+                                  <button 
+                                    class="nav-link skill_btn text-left w-100" 
+                                    :class="{ 'active': index === 0 }" 
+                                    :id="`v-pills-${category}-tab`" 
+                                    data-bs-toggle="pill" 
+                                    :data-bs-target="`#v-pills-${category}`" 
+                                    role="tab" 
+                                    :aria-controls="`v-pills-${category}`" 
+                                    :aria-selected="index === 0"
+                                  >
+                                    {{ category.charAt(0).toUpperCase() + category.slice(1) }}
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
                            </div>
                            <div class="col-12 col-md-9" id="abt_skill">
                              <div class="tab-content" id="v-pills-tabContent">
@@ -121,12 +134,11 @@
    {"id": 4, "title":"AR Shahin", "path": "/img/my/img.jpg"},
  ]);
  const skills = reactive({
-   frontend: ['HTML', 'CSS', 'BOOTSTRAP', 'JAVASCRIPT', 'JQUERY', 'Vue', 'Nuxt', 'Tailwind CSS'],
+   frontend: ['BOOTSTRAP',  'Tailwind CSS','JAVASCRIPT', 'JQUERY', 'Vue JS', 'Nuxt JS',],
    backend: ['PHP', 'LARAVEL', 'Node JS', 'Express JS', 'FAST API', 'Django'],
    database: ['MYSQL', 'MONGODB', 'SQLite'],
-   server: ['Cpanel', 'VPS', 'AWS'],
    AI: ['OpenAI API','Opensource LLM', 'Hugging Face', 'RAG', "Vector DB"],
-   others: ['Wordpress', 'GITHUB', 'GITLAB', 'JIRA','Linux'],
+   others: ['Wordpress','Docker', 'Cpanel', 'VPS', 'AWS', 'JIRA','Linux'],
  });
 
  </script>
@@ -134,6 +146,21 @@
  <style scoped>
  #about_section{
    background: #fff;
+ }
+ .skill_btn{
+  background: #0E1833;
+  padding: 5px;
+  color:#fff!important;
+  margin-bottom: 5px;
+  border-radius: 3px;
+ }
+
+ .skill_btn.active{
+  background: #DE4859;
+  color: #fff !important;
+ }
+ .abt_btn{
+  color: #182c61!important;
  }
  .about_me p{
   text-align: justify;
@@ -159,11 +186,11 @@
  #about_section ul li span {
    background: #f8efba;
    display: inline-block;
-   padding: 5px;
+   padding: 5px 10px;
    font-size: 14px;
    font-weight: 500;
    margin-top: 5px;
-   border-radius: 2px;
+   border-radius: 4px;
    transition: 0.6s;
    color: #182c61;
  }

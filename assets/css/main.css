@@ -24,6 +24,9 @@ list-style: none;
 section {
 padding: 40px 0;
 }
+.nav-link,  a{
+    color: #0E1833!important;
+}
 /*ANIMATIONS*/
 @keyframes HERO_ANIMATION {
 0% {
@@ -71,7 +74,7 @@ padding: 40px 0;
 }
 
 #abt_skill {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 #about_section h2 {
     margin-top: 25px;
@@ -138,7 +141,7 @@ h4 {
 }
 
 #abt_skill {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 #about_section h2 {
     margin-top: 25px;
