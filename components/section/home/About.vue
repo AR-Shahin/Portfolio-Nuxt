@@ -119,6 +119,10 @@
  </script>
  
  <style scoped>
+ #about_section{
+   background: #CFF5DE;
+ }
+ 
  .myImage_slider .owl-dots {
    display: none;
  }
