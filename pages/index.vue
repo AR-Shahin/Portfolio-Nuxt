@@ -1,7 +1,7 @@
 <template>
     <div>
-        <nuxt-link to="/about">About</nuxt-link>
-       <h1> Home page Porfolio</h1>
+      
+       <h1> Coming soon!!!! </h1>
     </div>
 </template>
 
