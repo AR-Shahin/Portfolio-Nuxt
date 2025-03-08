@@ -28,7 +28,7 @@ export default defineNuxtConfig({
           rel: "stylesheet"
         },
 
-        { rel: 'icon', type: 'image/png', href: "https://www.freeiconspng.com/uploads/fast-food-png-most-popular-fast-food-snacks-in-your-area-and-most--3.png" }
+        { rel: 'icon', type: 'image/png', href: "https://www.freeiconspng.com/uploads/work-on-laptop-icon-10.jpg" }
       ],
       script: [
         {
