@@ -1,6 +1,7 @@
 <template>
     <div>
-      <SectionHomeHeroSection/>
+      <SectionHomeHero/>
+      <SectionHomeAbout/>
      
     </div>
     
