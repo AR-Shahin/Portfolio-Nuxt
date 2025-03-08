@@ -1,6 +1,5 @@
 <template>
-    <div>
-        
+    <div style="overflow: hidden;">
         <MainNavbar />
         <main id="main" class="main">
             <slot />
