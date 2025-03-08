@@ -39,5 +39,7 @@
 </script>
 
 <style lang="scss" scoped>
-
+    .navbar{
+        background: #0E1833!important;
+    }
 </style>
