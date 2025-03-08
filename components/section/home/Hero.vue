@@ -9,7 +9,7 @@
                           <h1 class="">Anisur Rahman Shahin</h1>
                           <div class="tagline">
                               <div class="cd-intro">
-                                 <em style="color:#be2edd">Type Module Content Here</em>
+                                 <em style="color:#be2edd">Software Engineer</em>
                               </div> 
                           </div>
                           <div class="hero-social-media">
