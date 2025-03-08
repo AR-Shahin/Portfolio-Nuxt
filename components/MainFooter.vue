@@ -1,6 +1,6 @@
 <template>
 
-<div>
+<div class="footer_section">
     <section id="link_section" style="width: 100%">
         <div class="container">
             <div class="row">
@@ -68,7 +68,9 @@
 </script>
 
 <style lang="scss" scoped>
-
+.footer_section a{
+    color: #fff!important;
+}
 #link_section{
     background: #293044;
     color: #fff;

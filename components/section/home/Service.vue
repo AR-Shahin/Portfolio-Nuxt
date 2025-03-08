@@ -93,7 +93,7 @@
                                 <img src="~assets/img/about/web-application.06a0196.svg"
                                     alt="" class="img-fluid" />
                             </div>
-                            <h4>Graphic Design</h4>
+                            <h4>Artifical Inteligence</h4>
                             <p>Professional and affordable web design service. I design website with your customer in
                                 mind using latest technology & modern design trends</p>
                         </div>
