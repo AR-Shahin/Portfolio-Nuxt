@@ -186,11 +186,11 @@
  #about_section ul li span {
    background: #9D4C36;
    display: inline-block;
-   padding: 5px 10px;
+   padding: 1px 13px;
    font-size: 14px;
    font-weight: 500;
    margin-top: 5px;
-   border-radius: 4px;
+   border-radius: 5px;
    transition: 0.6s;
    color: #fff;
  }
