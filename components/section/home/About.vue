@@ -77,7 +77,7 @@
                                  </tr>
                                  <tr>
                                    <th>Address</th>
-                                   <td><span>Mohakhali, Dhaka, Bangladesh</span></td>
+                                   <td><span>Dhaka, Bangladesh</span></td>
                                  </tr>
                                  <tr>
                                    <th>Resume</th>
