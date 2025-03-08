@@ -2,6 +2,7 @@
     <div>
       <SectionHomeHero/>
       <SectionHomeAbout/>
+      <SectionHomeService/>
      
     </div>
     
