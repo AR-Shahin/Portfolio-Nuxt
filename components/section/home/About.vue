@@ -30,11 +30,23 @@
                    </div>
                  </nav>
                  <div class="tab-content" id="nav-tabContent">
-                   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                     <p class="mt-2">Hello. I'm Shahin. I'm a tech enthusiast guy. Personally, I’m optimistic and always in a hurry kinda person. I'm a freelance web developer. I study CSE at South-East University.</p>
-                     <p class="mt-1">I started my career as a Web Designer. After one year of consistently working in this field, it helped me a lot in gaining vast knowledge about business, marketing, and user experience too. I've tried a few more things to understand customer satisfaction, business engagement & marketing including e-commerce, portfolio, blogging, YouTube, etc.</p>
+                   <div class="tab-pane about_me fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                
+                    <div class="card mt-1">
+                      <div class="card-body p-3 py-2">
+                        <p class="mt-2">About
+                      I am a technology enthusiast with a Bachelor’s in Computer Science and Engineering (CGPA: 3.86) from South-East University. Over the past two years, I’ve gained substantial experience in Web Development, focusing on PHP, Laravel, Vue.js, Nuxt.js, Bootstrap, Tailwind CSS, JavaScript, Django, MongoDB, and Linux/Unix environments.
+                    </p>
+                      <p>
+                        Currently, I work as a Software Engineer at SSL Wireless, developing chatbot applications and working on GEN AI and LLM-based projects focused on automation and AI integration.
+                      </p>
+                     <p class="mt-1">
+                      While I have a background in web development, my primary focus now is Artificial Intelligence, with a partial focus on software development. In my free time, I create tech content for my YouTube channel and website. My passion for problem-solving and learning drives my continuous exploration of new technologies and methodologies.
+                     </p>
+                      </div>
+                    </div>
                    </div>
-                   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                   <div class="tab-pane fade mt-1" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
                      <div class="card">
                        <div class="card-body">
                          <div class="row">
@@ -113,16 +125,19 @@
    backend: ['PHP', 'LARAVEL', 'Node JS', 'Express JS', 'FAST API', 'Django'],
    database: ['MYSQL', 'MONGODB', 'SQLite'],
    server: ['Cpanel', 'VPS', 'AWS'],
-   others: ['Wordpress', 'GITHUB', 'GITLAB', 'JIRA'],
+   AI: ['OpenAI API','Opensource LLM', 'Hugging Face', 'RAG', "Vector DB"],
+   others: ['Wordpress', 'GITHUB', 'GITLAB', 'JIRA','Linux'],
  });
 
  </script>
  
  <style scoped>
  #about_section{
-   background: #CFF5DE;
+   background: #fff;
  }
- 
+ .about_me p{
+  text-align: justify;
+ }
  .myImage_slider .owl-dots {
    display: none;
  }
