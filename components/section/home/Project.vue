@@ -10,7 +10,7 @@
           </div>
         </div>
         <div class="row gx-3">
-          <div v-for="(project, index) in projects" :key="index" class=" col-12 col-sm-6 col-md-4 mb-3 wow animate__animated">
+          <div v-for="(project, index) in projects" :key="index" class=" col-12 col-sm-6 col-md-3 mb-3 wow animate__animated">
             <div class="service_box shadow">
               <div v-if="project.image" class="img_container">
                 <img :src="project.image" :alt="project.name" class="img-fluid" />
@@ -55,6 +55,12 @@
             description: "Professional and affordable web design service. I design websites with your customer in mind using the latest technology & modern design trends.",
             animation: "animate__lightSpeedInRight",
           },
+          {
+            name: "Artificial Intelligence",
+            image : "https://media.istockphoto.com/id/1998660059/photo/ai-artificial-intelligence-security-sentinel-password-cyber-security-ransomware-email.jpg?s=1024x1024&w=is&k=20&c=c2OXv-HBy9LxISuqw1CRv5e6oHNIOmAJ00iaDjOPCmE=",
+            description: "Professional and affordable web design service. I design websites with your customer in mind using the latest technology & modern design trends.",
+            animation: "animate__lightSpeedInRight",
+          },
         ],
       };
     },
@@ -77,7 +83,7 @@
     border-radius: 8px;
     opacity: 0.9;
     transition: opacity 0.3s ease-in-out;
-    height: 220px;
+    height: 190px;
     object-fit: cover;
   }
   
