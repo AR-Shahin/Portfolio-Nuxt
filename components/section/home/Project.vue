@@ -1,10 +1,10 @@
 <template>
-    <section id="service_section">
+    <section id="portfolio_section">
       <div class="container">
         <div class="row text-center mb-3">
           <div class="col-12">
             <div class="sec_title wow animate__animated animate__zoomIn">
-              <h2 class="mb-0 pb-1">My Project</h2>
+              <h2 class="mb-0 pb-1">My Portfolio</h2>
               <p class="m-0 p-0">Few of my best projects!</p>
             </div>
           </div>
