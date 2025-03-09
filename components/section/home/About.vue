@@ -144,6 +144,9 @@
  </script>
  
  <style scoped>
+ .nav-link,  a{
+    color: #0E1833!important;
+}
  #about_section{
    background: #fff;
  }

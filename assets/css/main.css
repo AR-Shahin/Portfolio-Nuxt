@@ -25,7 +25,7 @@ section {
 padding: 40px 0;
 }
 .nav-link,  a{
-    color: #0E1833!important;
+    color: #fff!important;
 }
 /*ANIMATIONS*/
 @keyframes HERO_ANIMATION {
