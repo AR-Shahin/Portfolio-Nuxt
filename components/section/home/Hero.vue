@@ -38,6 +38,7 @@
 <style lang="scss" scoped>
 #hero-section {
 padding: 100px 0 10px 0 !important;
+
 .hero-text {
   text-align: left;
   .intro {
