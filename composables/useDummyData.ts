@@ -47,7 +47,7 @@ export function useDummyData() {
             ]
           },
           {
-            name: "News Paper List",
+            name: "News Portal",
             image : "https://i.ibb.co.com/1GFZVCmy/pr4.png",
             viewLink: "#",
             liveLink: "#",
