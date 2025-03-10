@@ -10,7 +10,7 @@ export function useDummyData() {
             features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
             technologies: ["HTML", "CSS", "JavaScript", "Vue.js", "Firebase"],
             youtube : "http://youtube.",
-            slug : "news-portal",
+            slug : "fns-news-portal-main",
             is_front: true,
             extra_images : [
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
@@ -25,7 +25,7 @@ export function useDummyData() {
             features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
             technologies: ["HTML", "CSS", "JavaScript", "Vue.js", "Firebase"],
             youtube : "http://youtube.",
-            slug : "news-portal",
+            slug : "fns-news-portal",
             is_front: true,
             extra_images : [
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",

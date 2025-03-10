@@ -17,7 +17,7 @@
                 <h5 class="project_name">{{ project.name }}</h5>
                 <div class="hover_overlay">
                   <div class="hover_links">
-                    <a :href="project.viewLink" target="_blank">Details</a>
+                    <nuxt-link :to="`/project/${project.slug}`">Details</nuxt-link>
                     <a :href="project.liveLink" target="_blank">Live Link</a>
                     <h5 class="project_name">{{ project.name }}</h5>
                   </div>
