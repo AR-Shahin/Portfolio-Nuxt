@@ -3,7 +3,7 @@ export function useDummyData() {
     const PROJECTS : any = [
         {
             name: "News Portal",
-            image: "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
+            image: "https://i.ibb.co.com/G1GgTcn/prt1.png",
             viewLink: "#",
             liveLink: "https://www.fns24.com",
             description: "A news portal that provides users with real-time news updates, breaking news, and popular stories from around the world.",
@@ -18,7 +18,7 @@ export function useDummyData() {
           },
           {
             name: "News Paper List",
-            image : "https://media.istockphoto.com/id/1385970223/photo/great-idea-of-a-marketing-strategy-plan-at-a-creative-office.jpg?s=1024x1024&w=is&k=20&c=SSsdBZXp94FFIDnC2zF0E28Xv_mtBFg76-IPv5Czdxk=",
+            image : "https://i.ibb.co.com/FkG84LcG/prt2.png",
             viewLink: "#",
             liveLink: "https://newspaperlist.org",
             description: "A news portal that provides users with real-time news updates, breaking news, and popular stories from around the world.",
@@ -33,7 +33,7 @@ export function useDummyData() {
           },
           {
             name: "Converter ",
-            image : "https://media.istockphoto.com/id/1077175614/photo/sharing-ideas-concepts-with-papernote-writing-strategy-on-wall-glass-office-business-marketing.jpg?s=1024x1024&w=is&k=20&c=P1MmY4qAodLWU1p_IaB8Qr2NRT5SxeG-JC_OlvVkLk0=",
+            image : "https://i.ibb.co.com/xK371c1H/pr3.png",
             viewLink: "#",
             liveLink: "https://freebanglaconverter.com",
             description: "A news portal that provides users with real-time news updates, breaking news, and popular stories from around the world.",
@@ -48,7 +48,7 @@ export function useDummyData() {
           },
           {
             name: "News Paper List",
-            image : "https://media.istockphoto.com/id/1998660059/photo/ai-artificial-intelligence-security-sentinel-password-cyber-security-ransomware-email.jpg?s=1024x1024&w=is&k=20&c=c2OXv-HBy9LxISuqw1CRv5e6oHNIOmAJ00iaDjOPCmE=",
+            image : "https://i.ibb.co.com/1GFZVCmy/pr4.png",
             viewLink: "#",
             liveLink: "#",
             description: "A news portal that provides users with real-time news updates, breaking news, and popular stories from around the world.",
