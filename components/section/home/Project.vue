@@ -30,42 +30,15 @@
     </section>
   </template>
   
-  <script>
-  export default {
-    data() {
-      return {
-        projects: [
-          {
-            name: "Project Name",
-            image: "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
-            viewLink: "#",
-            liveLink: "#",
-            animation: "animate__lightSpeedInLeft",
-          },
-          {
-            name: "Web Development",
-            image : "https://media.istockphoto.com/id/1385970223/photo/great-idea-of-a-marketing-strategy-plan-at-a-creative-office.jpg?s=1024x1024&w=is&k=20&c=SSsdBZXp94FFIDnC2zF0E28Xv_mtBFg76-IPv5Czdxk=",
-            bgColor: "rgba(254, 164, 127, 0.33)",
-            description: "Professional and affordable web design service. I design websites with your customer in mind using the latest technology & modern design trends.",
-            animation: "animate__pulse",
-          },
-          {
-            name: "WordPress Customization",
-            image : "https://media.istockphoto.com/id/1077175614/photo/sharing-ideas-concepts-with-papernote-writing-strategy-on-wall-glass-office-business-marketing.jpg?s=1024x1024&w=is&k=20&c=P1MmY4qAodLWU1p_IaB8Qr2NRT5SxeG-JC_OlvVkLk0=",
-            description: "Professional and affordable web design service. I design websites with your customer in mind using the latest technology & modern design trends.",
-            animation: "animate__lightSpeedInRight",
-          },
-          {
-            name: "Artificial Intelligence",
-            image : "https://media.istockphoto.com/id/1998660059/photo/ai-artificial-intelligence-security-sentinel-password-cyber-security-ransomware-email.jpg?s=1024x1024&w=is&k=20&c=c2OXv-HBy9LxISuqw1CRv5e6oHNIOmAJ00iaDjOPCmE=",
-            description: "Professional and affordable web design service. I design websites with your customer in mind using the latest technology & modern design trends.",
-            animation: "animate__lightSpeedInRight",
-          },
-        ],
-      };
-    },
-  };
-  </script>
+  <script setup>
+    const { PROJECTS } = useDummyData();
+    const projects = ref([]);
+
+
+    onMounted(()=>{
+      projects.value = PROJECTS.filter((p) => p.is_front);
+    })
+   </script>
   
   <style lang="scss" scoped>
   .service_box {

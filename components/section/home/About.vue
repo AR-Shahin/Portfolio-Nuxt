@@ -34,7 +34,7 @@
                 
                     <div class="card mt-1">
                       <div class="card-body p-3 py-2">
-                        <p class="mt-2">About
+                        <p class="mt-2">
                       I am a technology enthusiast with a Bachelor’s in Computer Science and Engineering (CGPA: 3.86) from South-East University. Over the past two years, I’ve gained substantial experience in Web Development, focusing on PHP, Laravel, Vue.js, Nuxt.js, Bootstrap, Tailwind CSS, JavaScript, Django, MongoDB, and Linux/Unix environments.
                     </p>
                       <p>

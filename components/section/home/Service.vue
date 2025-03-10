@@ -113,7 +113,6 @@
 
 <style lang="scss" scoped>
 #service_section {
-  background: rgba(248, 239, 186, 0.3);
   text-align: center;
   .img_box {
     width: 80px;
