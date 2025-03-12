@@ -8,7 +8,11 @@ html{
 }
 body{
     font-family: "Roboto", serif!important;
-    background: #dff9fb;
+    /* background: #dff9fb; */
+}
+hr{
+    margin: 0;
+    padding: 0;
 }
 
 a {

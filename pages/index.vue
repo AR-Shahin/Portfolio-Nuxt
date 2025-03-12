@@ -1,8 +1,11 @@
 <template>
     <div>
       <SectionHomeHero/>
+      <hr>
       <SectionHomeAbout/>
+      <hr>
       <SectionHomeService/>
+      <hr>
       <SectionHomeProject/>
      
     </div>
