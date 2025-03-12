@@ -3,7 +3,7 @@ export function useDummyData() {
     const PROJECTS : any = [
         {
             name: "News Portal",
-            image: "https://i.ibb.co.com/G1GgTcn/prt1.png",
+            image: "https://shop.bandhubattery.com/storage/ars/1741793769_67d1a9e9b1ce5.png",
             viewLink: "#",
             liveLink: "https://www.fns24.com",
             description: "A news portal that provides users with real-time news updates, breaking news, and popular stories from around the world.",
@@ -13,7 +13,7 @@ export function useDummyData() {
             slug : "fns-news-portal-main",
             is_front: true,
             extra_images : [
-                "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
+                "https://shop.bandhubattery.com/storage/ars/1741793769_67d1a9e9b1ce5.png",
             ]
           },
           {
