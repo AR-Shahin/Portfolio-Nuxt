@@ -97,6 +97,38 @@ export function useDummyData() {
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
             ]
           },
+          {
+            name: "Sultan Shah Party",
+            image : "https://shop.bandhubattery.com/storage/ars/1741876354_67d2ec82681da.png",
+            viewLink: "#",
+            liveLink: "https://sultanshahparties.com/",
+            category : "Wordpress",
+            description: "Sultan Shah Parties & Entertainment services is one of the leading supplier for entertainment & event technology in the Middle East and North African region. ",
+            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
+            technologies: ["Wordpress"],
+            youtube : "http://youtube.",
+            slug : "Sultan-Shah-Party",
+            is_front: true,
+            extra_images : [
+                "https://shop.bandhubattery.com/storage/ars/1741876354_67d2ec82681da.png",
+            ]
+          },
+          {
+            name: "Charity",
+            image : "https://shop.bandhubattery.com/storage/ars/1741876462_67d2ecee7ea0c.png",
+            viewLink: "#",
+            liveLink: "https://manobiksebafoundation.org/",
+            category : "Wordpress",
+            description: "Charity Foundation",
+            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
+            technologies: ["Laravel","MySQL"],
+            youtube : "http://youtube.",
+            slug : "Charity-manobik-sheba",
+            is_front: true,
+            extra_images : [
+                "https://shop.bandhubattery.com/storage/ars/1741876462_67d2ecee7ea0c.png",
+            ]
+          },
     ]
     
 
