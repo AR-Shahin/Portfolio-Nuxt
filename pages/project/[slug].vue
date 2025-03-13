@@ -2,6 +2,7 @@
     <div>
         <section id="single_project" v-if="project">
             <div class="container">
+                <a href="/#portfolio_section" class="btn btn-sm btn-success mb-2">Back</a>
                 <div class="row">
                     <div class="col-md-6">
                         <img :src="project.image" alt="" class="w-100">
