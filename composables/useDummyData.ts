@@ -81,6 +81,22 @@ export function useDummyData() {
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
             ]
           },
+          {
+            name: "Inventory Management System",
+            image : "https://shop.bandhubattery.com/storage/ars/1741869353_67d2d129726e1.png",
+            viewLink: "#",
+            liveLink: "https://bandhubattery.com/",
+            category : "Laravel",
+            description: "Inventory management system for bandhu battery. ",
+            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
+            technologies: ["Bootstrap", "Laravel", "MYSQL","Google Drive"],
+            youtube : "http://youtube.",
+            slug : "inventory-Management-System-bandhu-battery",
+            is_front: true,
+            extra_images : [
+                "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
+            ]
+          },
     ]
     
 
