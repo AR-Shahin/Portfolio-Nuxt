@@ -13,6 +13,7 @@ export function useDummyData() {
             youtube : "http://youtube.",
             slug : "fns-news-portal-main",
             is_front: true,
+            order : 1,
             extra_images : [
                 "https://shop.bandhubattery.com/storage/ars/1741793769_67d1a9e9b1ce5.png",
             ]
@@ -29,6 +30,7 @@ export function useDummyData() {
             youtube : "http://youtube.",
             slug : "fns-news-portal",
             is_front: true,
+            order : 2,
             extra_images : [
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
             ]
@@ -45,6 +47,7 @@ export function useDummyData() {
             youtube : "http://youtube.",
             slug : "news-portal",
             is_front: true,
+            order : 3,
             extra_images : [
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
             ]
@@ -61,6 +64,7 @@ export function useDummyData() {
             youtube : "http://youtube.",
             slug : "news-portal-raw",
             is_front: true,
+            order : 4,
             extra_images : [
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
             ]
@@ -77,6 +81,7 @@ export function useDummyData() {
             youtube : "http://youtube.",
             slug : "Institute-Management-System",
             is_front: true,
+            order : 5,
             extra_images : [
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
             ]
@@ -93,6 +98,7 @@ export function useDummyData() {
             youtube : "http://youtube.",
             slug : "inventory-Management-System-bandhu-battery",
             is_front: true,
+            order : 6,
             extra_images : [
                 "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
             ]
@@ -109,6 +115,7 @@ export function useDummyData() {
             youtube : "http://youtube.",
             slug : "Sultan-Shah-Party",
             is_front: true,
+            order : 7,
             extra_images : [
                 "https://shop.bandhubattery.com/storage/ars/1741876354_67d2ec82681da.png",
             ]
@@ -125,8 +132,43 @@ export function useDummyData() {
             youtube : "http://youtube.",
             slug : "Charity-manobik-sheba",
             is_front: true,
+            order : 7,
             extra_images : [
                 "https://shop.bandhubattery.com/storage/ars/1741876462_67d2ecee7ea0c.png",
+            ]
+          },
+          {
+            name: "Restaurant Landing Page",
+            image : "https://shop.bandhubattery.com/storage/ars/1741933220_67d3caa437fbb.png",
+            viewLink: "#",
+            liveLink: "https://www.food.toolsyoulove.com/",
+            category : "Wordpress",
+            description: "Restaurant Landing Page",
+            features: ["Food", "API integration", "User authentication", "Real-time updates"],
+            technologies: ["Wordpress","Wocommerce"],
+            youtube : "http://youtube.",
+            slug : "Restaurant-Landing-Page",
+            is_front: true,
+            order : 8,
+            extra_images : [
+                "https://shop.bandhubattery.com/storage/ars/1741933220_67d3caa437fbb.png",
+            ]
+          },
+          {
+            name: "Ecommerce",
+            image : "https://shop.bandhubattery.com/storage/ars/1741933382_67d3cb4673945.png",
+            viewLink: "#",
+            liveLink: "https://www.shop.toolsyoulove.com/",
+            category : "Wordpress",
+            description: "Restaurant Landing Page",
+            features: ["Shop", "Ecommerce", "User authentication", "Real-time updates"],
+            technologies: ["Wordpress","Wocommerce"],
+            youtube : "http://youtube.",
+            slug : "Ecommerce-one",
+            is_front: true,
+            order : 9,
+            extra_images : [
+                "https://shop.bandhubattery.com/storage/ars/1741933382_67d3cb4673945.png",
             ]
           },
     ]
