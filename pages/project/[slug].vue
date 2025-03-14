@@ -9,7 +9,7 @@
                     </div>
                     <div class="col-md-6">
                         <h2>{{ project.name }}</h2>
-                        <p>{{ project.description }}</p>
+                        <p style="text-align: justify;line-height: 1.7;">{{ project.description }}</p>
                         <p>Technologies: <span class="badge bg-primary mx-1" v-for="feature in project.technologies" :key="feature">{{ feature }}</span></p>
                         <p>Features: <span class="badge bg-success mx-1" v-for="feature in project.features" :key="feature">{{ feature }}</span></p>
                       
