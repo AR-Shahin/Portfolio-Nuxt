@@ -171,6 +171,40 @@ export function useDummyData() {
                 "https://shop.bandhubattery.com/storage/ars/1741933382_67d3cb4673945.png",
             ]
           },
+          {
+            name: "Ecommerce",
+            image : "https://shop.bandhubattery.com/storage/ars/1742016993_67d511e18289c.png",
+            viewLink: "#",
+            liveLink: "https://khadikabbo.com/",
+            category : "Wordpress",
+            description: "A fully functional e-commerce platform tailored for online stores, offering a seamless shopping experience with secure payment options, product catalogs, and customer management features. Built with WordPress and WooCommerce, it supports multiple product categories, inventory tracking, and automated order processing. The website integrates real-time stock updates, ensuring customers always have access to accurate product availability. API connections allow smooth payment gateway integration and third-party logistics support. With a mobile-friendly design and user-friendly navigation, it enhances customer engagement and boosts sales. This platform is perfect for businesses looking to establish or expand their digital retail presence.",
+            features: ["Shop", "Ecommerce", "User authentication", "Real-time updates"],
+            technologies: ["Wordpress","Wocommerce"],
+            youtube : "http://youtube.",
+            slug : "Ecommerce-khadikabbo",
+            is_front: true,
+            order : 9,
+            extra_images : [
+                "https://shop.bandhubattery.com/storage/ars/1742016993_67d511e18289c.png",
+            ]
+          },
+          {
+            name: "Ecommerce",
+            image : "https://shop.bandhubattery.com/storage/ars/1742017042_67d51212c23b0.png",
+            viewLink: "#",
+            liveLink: "https://krisnachura.com.bd/",
+            category : "Wordpress",
+            description: "A fully functional e-commerce platform tailored for online stores, offering a seamless shopping experience with secure payment options, product catalogs, and customer management features. Built with WordPress and WooCommerce, it supports multiple product categories, inventory tracking, and automated order processing. The website integrates real-time stock updates, ensuring customers always have access to accurate product availability. API connections allow smooth payment gateway integration and third-party logistics support. With a mobile-friendly design and user-friendly navigation, it enhances customer engagement and boosts sales. This platform is perfect for businesses looking to establish or expand their digital retail presence.",
+            features: ["Shop", "Ecommerce", "User authentication", "Real-time updates"],
+            technologies: ["Wordpress","Wocommerce"],
+            youtube : "http://youtube.",
+            slug : "Ecommerce-Krisnochura",
+            is_front: true,
+            order : 9,
+            extra_images : [
+                "https://shop.bandhubattery.com/storage/ars/1742017042_67d51212c23b0.png",
+            ]
+          },
     ]
     
 
