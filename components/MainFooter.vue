@@ -8,7 +8,7 @@
                     <h4>Links</h4>
                     <div class="links">
                         <ul>
-                            <li><a href="{{url('/')}}"><i class="fa fa-square"></i> Home</a></li>
+                            <li><a href="/"><i class="fa fa-square"></i> Home</a></li>
                             <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> About</a></li>
                             <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Codes</a></li>
                             <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Portfolio</a></li>
@@ -19,11 +19,11 @@
                     <h4>Follow Me</h4>
                     <div class="links">
                         <ul>
-                            <li><a href="@if($link){{$link->facebook}}@endif"><i class="fa fa-square"></i> Facebook</a></li>
+                            <li><a href="https://www.facebook.com/arshahin201"><i class="fa fa-square"></i> Facebook</a></li>
                             <li><a href="@if($link){{$link->twitter}}@endif"><i class="fa fa-square"></i> Twitter</a></li>
-                            <li><a href="@if($link){{$link->github}}@endif"><i class="fa fa-square"></i> Github</a></li>
-                            <li><a href="@if($link){{$link->linkedin}}@endif"><i class="fa fa-square"></i> Linkedin</a></li>
-                            <li><a href="@if($link){{$link->youtube}}@endif"><i class="fa fa-square"></i> Youtube</a></li>
+                            <li><a href="https://github.com/AR-Shahin"><i class="fa fa-square"></i> Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/arshahin/"><i class="fa fa-square"></i> Linkedin</a></li>
+                            <li><a href="https://www.youtube.com/@arshahin9803"><i class="fa fa-square"></i> Youtube</a></li>
                         </ul>
                     </div>
                 </div>

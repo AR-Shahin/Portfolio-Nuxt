@@ -14,11 +14,11 @@
                           </div>
                           <div class="hero-social-media">
                               <ul>
-                                  <li><a  target="_blank"><i class="fab fa-facebook"></i></a></li>
+                                  <li><a  href="https://www.facebook.com/arshahin201" target="_blank"><i class="fab fa-facebook"></i></a></li>
                                   <li><a target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                  <li><a target="_blank"><i class="fab fa-github"></i></a></li>
-                                  <li><a target="_blank"><i class="fab fa-youtube"></i></a></li>
-                                  <li><a  target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                  <li><a href="https://github.com/AR-Shahin" target="_blank"><i class="fab fa-github"></i></a></li>
+                                  <li><a href="https://www.youtube.com/@arshahin9803" target="_blank"><i class="fab fa-youtube"></i></a></li>
+                                  <li><a href="https://www.linkedin.com/in/arshahin/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
                               </ul>
                           </div>
                       </div>
@@ -69,6 +69,7 @@ ul {
     color: #2d3436;
     border: 1.5px solid transparent;
     transition: 0.6s;
+    cursor: pointer;
     a {
       color: #fff;
       font-size: 18px;
