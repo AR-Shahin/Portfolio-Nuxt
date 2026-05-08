@@ -7,8 +7,16 @@
       
       <div class="row g-5">
         <div class="col-lg-7 animate-fade-in-up">
-          <div class="glass-card p-2">
+          <div class="glass-card p-2 mb-4">
             <img :src="project.image" :alt="project.name" class="img-fluid rounded w-100 shadow-lg" />
+          </div>
+          
+          <div v-if="project.extra_images && project.extra_images.length" class="row g-3 mt-2">
+            <div v-for="(img, idx) in project.extra_images" :key="idx" class="col-6">
+              <div class="glass-card p-1">
+                <img :src="img" :alt="`${project.name} screenshot ${idx + 1}`" class="img-fluid rounded w-100" />
+              </div>
+            </div>
           </div>
         </div>
         

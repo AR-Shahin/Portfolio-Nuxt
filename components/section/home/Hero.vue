@@ -21,7 +21,7 @@
               <span class="stat_label">Years Exp.</span>
             </div>
             <div class="stat_item">
-              <span class="stat_num">20+</span>
+              <span class="stat_num">25+</span>
               <span class="stat_label">Projects</span>
             </div>
             <div class="stat_item">

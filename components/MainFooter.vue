@@ -3,7 +3,10 @@
     <div class="container">
       <div class="row g-4 justify-content-between">
         <div class="col-lg-4">
-          <h3 class="fw-bold mb-3">AR<span class="text-gradient">SHAHIN</span></h3>
+          <div class="d-flex align-items-center gap-2 mb-3">
+            <img src="~/assets/img/logo.png" alt="AR Shahin Logo" style="height: 35px;" />
+            <h3 class="fw-bold mb-0">AR<span class="text-gradient">SHAHIN</span></h3>
+          </div>
           <p class="text-secondary small">Software Engineer & AI Specialist focused on building the future of intelligent systems.</p>
           <div class="d-flex gap-3 mt-4">
             <a href="https://github.com/AR-Shahin" target="_blank" class="text-secondary fs-5"><i class="fab fa-github"></i></a>
@@ -30,7 +33,7 @@
       </div>
       
       <div class="mt-5 pt-4 border-top border-secondary opacity-25 text-center">
-        <p class="small text-secondary mb-0">&copy; {{ new Date().getFullYear() }} AR Shahin. Built with Nuxt 3.</p>
+        <p class="small text-white mb-0">&copy; {{ new Date().getFullYear() }} Developed by <a href="#" target="_blank">AR Shahin</a></p>
       </div>
     </div>
   </footer>

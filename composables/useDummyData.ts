@@ -3,7 +3,7 @@ export const useDummyData = () => {
     const PROJECTS = [
         {
             name: "Lilyra AI Platform",
-            image: "https://shop.bandhubattery.com/storage/ars/lilyra_main.png",
+            image: "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800",
             viewLink: "#",
             category: "AI & Automation",
             liveLink: "https://lilyra.com",
@@ -13,11 +13,14 @@ export const useDummyData = () => {
             slug: "lilyra-ai-platform",
             is_front: true,
             order: 1,
-            extra_images: []
+            extra_images: [
+                "https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=600",
+                "https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&q=80&w=600"
+            ]
         },
         {
             name: "AI Cover Letter Generator",
-            image: "https://shop.bandhubattery.com/storage/ars/cover_letter_gen.png",
+            image: "https://images.unsplash.com/photo-1664575602554-2087b04935a5?auto=format&fit=crop&q=80&w=800",
             viewLink: "#",
             category: "Gen AI",
             liveLink: "https://lilyra.com/tools/cover-letter",
@@ -27,11 +30,14 @@ export const useDummyData = () => {
             slug: "ai-cover-letter-generator",
             is_front: true,
             order: 2,
-            extra_images: []
+            extra_images: [
+                "https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&q=80&w=600",
+                "https://images.unsplash.com/photo-1618044733300-9472054094ee?auto=format&fit=crop&q=80&w=600"
+            ]
         },
         {
             name: "FNS24 News Portal",
-            image: "https://shop.bandhubattery.com/storage/ars/1741793769_67d1a9e9b1ce5.png",
+            image: "https://picsum.photos/seed/news/800/600",
             viewLink: "#",
             category: "Web App",
             liveLink: "https://www.fns24.com",
@@ -41,11 +47,14 @@ export const useDummyData = () => {
             slug: "fns24-news-portal",
             is_front: true,
             order: 3,
-            extra_images: []
+            extra_images: [
+                "https://images.unsplash.com/photo-1495020689067-958852a7765e?auto=format&fit=crop&q=80&w=600",
+                "https://images.unsplash.com/photo-1585829365295-ab7cd400c167?auto=format&fit=crop&q=80&w=600"
+            ]
         },
         {
             name: "Disaster Alert for BD",
-            image: "https://shop.bandhubattery.com/storage/ars/disaster_alert.png",
+            image: "https://picsum.photos/seed/disaster/800/600",
             viewLink: "#",
             category: "Mobile & Social Impact",
             liveLink: "#",
@@ -55,11 +64,14 @@ export const useDummyData = () => {
             slug: "disaster-alert-bd",
             is_front: true,
             order: 4,
-            extra_images: []
+            extra_images: [
+                "https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?auto=format&fit=crop&q=80&w=600",
+                "https://images.unsplash.com/photo-1514868222533-f584e03070cd?auto=format&fit=crop&q=80&w=600"
+            ]
         },
         {
             name: "RAG-Based LLM Chatbot",
-            image: "https://shop.bandhubattery.com/storage/ars/rag_chatbot.png",
+            image: "https://images.unsplash.com/photo-1531746790731-6c087fecd65a?auto=format&fit=crop&q=80&w=800",
             viewLink: "#",
             category: "AI & ML",
             liveLink: "#",
@@ -69,11 +81,14 @@ export const useDummyData = () => {
             slug: "rag-llm-chatbot",
             is_front: true,
             order: 5,
-            extra_images: []
+            extra_images: [
+                "https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&q=80&w=600",
+                "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=600"
+            ]
         },
         {
             name: "Breast Cancer Detection Research",
-            image: "https://shop.bandhubattery.com/storage/ars/research_cancer.png",
+            image: "https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&q=80&w=800",
             viewLink: "#",
             category: "Research",
             liveLink: "https://www.mdpi.com/",
@@ -83,7 +98,10 @@ export const useDummyData = () => {
             slug: "breast-cancer-detection",
             is_front: true,
             order: 6,
-            extra_images: []
+            extra_images: [
+                "https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&q=80&w=600",
+                "https://images.unsplash.com/photo-1559757175-5700dde675bc?auto=format&fit=crop&q=80&w=600"
+            ]
         }
     ]
 

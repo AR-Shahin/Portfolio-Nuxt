@@ -1,8 +1,8 @@
 <template>
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-      <router-link class="navbar-brand fw-bold text-white" to="/">
-        AR<span class="text-gradient">SHAHIN</span>
+      <router-link class="navbar-brand d-flex align-items-center gap-2" to="/">
+        <img src="~/assets/img/logo.png" alt="AR Shahin Logo" style="height: 30px;" />
       </router-link>
       <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
