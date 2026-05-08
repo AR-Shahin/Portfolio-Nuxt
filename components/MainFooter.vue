@@ -1,107 +1,121 @@
 <template>
-
-<div class="footer_section">
-    <section id="link_section" style="width: 100%">
-        <div class="container">
-            <div class="row">
-                <div class="col-6 col-sm-6 col-md-3 mb-3 ">
-                    <h4>Links</h4>
-                    <div class="links">
-                        <ul>
-                            <li><a href="/"><i class="fa fa-square"></i> Home</a></li>
-                            <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> About</a></li>
-                            <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Codes</a></li>
-                            <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Portfolio</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 mb-3">
-                    <h4>Follow Me</h4>
-                    <div class="links">
-                        <ul>
-                            <li><a href="https://www.facebook.com/arshahin201"><i class="fa fa-square"></i> Facebook</a></li>
-                            <li><a href="@if($link){{$link->twitter}}@endif"><i class="fa fa-square"></i> Twitter</a></li>
-                            <li><a href="https://github.com/AR-Shahin"><i class="fa fa-square"></i> Github</a></li>
-                            <li><a href="https://www.linkedin.com/in/arshahin/"><i class="fa fa-square"></i> Linkedin</a></li>
-                            <li><a href="https://www.youtube.com/@arshahin9803"><i class="fa fa-square"></i> Youtube</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3" >
-                    <h4>Resources</h4>
-                    <div class="links">
-                        <ul>
-                            <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Blog</a></li>
-                            <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Codes</a></li>
-                            <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Free Tools</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-6 col-sm-6 col-md-3 ">
-                    <h4>Hire Me</h4>
-                    <div class="links">
-                        <ul>
-                            <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Fiverr Profile</a></li>
-                            <li><a href="https://tutspack.com/"><i class="fa fa-square"></i> Upwork Profile</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-4">
+          <div class="footer_brand mb-4">
+            <h3 class="brand_text">AR <span class="text-primary">SHAHIN</span></h3>
+            <p class="text-muted mt-3">
+              Software Engineer & AI Specialist dedicated to building the future of intelligent web systems.
+            </p>
+          </div>
+          <div class="social_links d-flex gap-3">
+            <a href="https://github.com/AR-Shahin" target="_blank" class="social_btn"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/arshahin/" target="_blank" class="social_btn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.youtube.com/@arshahin9803" target="_blank" class="social_btn"><i class="fab fa-youtube"></i></a>
+          </div>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <div class="row text-center">
-            <div class="col-12">
-                <span>Design & Developed with <b>&hearts;</b> by <a href="@if($link){{$link->youtube}}@endif">Shahin</a></span>
-            </div>
+        
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer_title mb-4">Quick Links</h4>
+          <ul class="footer_links list-unstyled">
+            <li><a href="#about_section">About Me</a></li>
+            <li><a href="#service_section">Expertise</a></li>
+            <li><a href="#portfolio_section">Portfolio</a></li>
+            <li><a href="https://tutspack.com/" target="_blank">Tech Blog</a></li>
+          </ul>
         </div>
-    </footer>
-</div>
+        
+        <div class="col-lg-4 col-md-6">
+          <h4 class="footer_title mb-4">Newsletter</h4>
+          <p class="text-muted small mb-4">Subscribe to get the latest updates on AI and software engineering.</p>
+          <div class="newsletter_form glass-card d-flex p-1">
+            <input type="email" placeholder="Email address" class="form-control bg-transparent border-0 text-white" />
+            <button class="btn-primary-modern btn-sm">Join</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer_bottom mt-5 pt-4 text-center border-top border-secondary">
+        <p class="text-muted small mb-0">
+          &copy; {{ new Date().getFullYear() }} AR Shahin. All rights reserved. Built with Nuxt 3.
+        </p>
+      </div>
+    </div>
+  </footer>
 </template>
 
-<script>
-    export default {
-        
-    }
-</script>
-
 <style lang="scss" scoped>
-.footer_section a{
-    color: #fff!important;
-}
-#link_section{
-    background: #293044;
-    color: #fff;
-    padding: 70px 0;
-}
-#link_section h4{
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-}
-#link_section .links ul li i{
-    font-size: 10px;
-    color: #ccc;
-    margin-right: 5px;
-}
-#link_section .links ul li a{
-    color: #ccc;
-    font-size: 14px;
-}
-footer{
-    padding: 25px 0;
-    color: #ccc;
-    background: #0E1833;
-}
-footer span{
-    font-size: 14px;
-    letter-spacing: 1px;
-    font-weight: 100;
-}
-footer span b{
-    color: #e74c3c;
-    font-size: 15px;
+.footer {
+  background: var(--bg-darker);
+  position: relative;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: var(--glass-border);
+  }
 }
 
+.brand_text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 800;
+}
+
+.footer_title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: var(--primary-color);
+  }
+}
+
+.footer_links li {
+  margin-bottom: 12px;
+  a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: all 0.3s ease;
+    &:hover {
+      color: var(--primary-color);
+      padding-left: 5px;
+    }
+  }
+}
+
+.social_btn {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  &:hover {
+    background: var(--accent-gradient);
+    border-color: transparent;
+    transform: translateY(-3px);
+  }
+}
+
+.newsletter_form {
+  border-radius: 10px;
+  input:focus {
+    box-shadow: none;
+  }
+}
 </style>

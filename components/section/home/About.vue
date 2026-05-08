@@ -1,265 +1,160 @@
 <template>
-   <section id="about_section">
-     <div class="container">
-       <div class="row">
-         <div class="col-12 col-sm-6 col-md-6 align-self-center">
-            <div class="myImage_slider">
-               <div class="slider-wrapper">
-                  <div class="slider">
-                  <div class="slide" v-for="(image, index) in [...myImages, ...myImages]" :key="index">
-                     <img :src="image.path" alt="" class="img-fluid" />
-                     <div class="pos_content">{{ image.title }}</div>
-                  </div>
-                  </div>
-               </div>
+  <section id="about_section" class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 mb-4 mb-lg-0">
+          <div class="about_image_stack animate-fade-in-up">
+            <div class="glass-card main_img">
+              <img src="/img/my/img.jpg" alt="AR Shahin" class="img-fluid rounded" />
             </div>
-         </div>
-         <div class="col-12 col-sm-6 col-md-6">
-           <div class="heading">
-             <h2 class="mb-0 pb-1">About Me</h2>
-             <p class="m-0 p-0">My Introduction</p>
-           </div>
-           <div class="tab_buttons border-1 mt-3">
-             <div class="row">
-               <div class="col-12">
-                 <nav>
-                   <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                     <button class="nav-link abt_btn active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">About Me</button>
-                     <button class="nav-link abt_btn" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Skills</button>
-                     <button class="nav-link abt_btn" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
-                   </div>
-                 </nav>
-                 <div class="tab-content" id="nav-tabContent">
-                   <div class="tab-pane about_me fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-                
-                    <div class="card mt-1">
-                      <div class="card-body p-3 py-2">
-                        <p class="mt-2">
-                      I am a technology enthusiast with a Bachelor’s in Computer Science and Engineering (CGPA: 3.86) from South-East University. Over the past two years, I’ve gained substantial experience in Web Development, focusing on PHP, Laravel, Vue.js, Nuxt.js, Bootstrap, Tailwind CSS, JavaScript, Django, MongoDB, and Linux/Unix environments.
-                    </p>
-                      <p>
-                        Currently, I work as a Software Engineer at SSL Wireless, developing chatbot applications and working on GEN AI and LLM-based projects focused on automation and AI integration.
-                      </p>
-                     <p class="mt-1">
-                      While I have a background in web development, my primary focus now is Artificial Intelligence, with a partial focus on software development. In my free time, I create tech content for my YouTube channel and website. My passion for problem-solving and learning drives my continuous exploration of new technologies and methodologies.
-                     </p>
-                      </div>
-                    </div>
-                   </div>
-                   <div class="tab-pane fade mt-1" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                     <div class="card">
-                       <div class="card-body">
-                         <div class="row">
-                           <div class="col-12 col-md-3 text-left">
-                            <div class="nav flex-column nav-pills">
-                              <div class="row">
-                                <div v-for="(category, index) in Object.keys(skills)" :key="category" class="col-md-12 col-4">
-                                  <button 
-                                    class="nav-link skill_btn text-left w-100" 
-                                    :class="{ 'active': index === 0 }" 
-                                    :id="`v-pills-${category}-tab`" 
-                                    data-bs-toggle="pill" 
-                                    :data-bs-target="`#v-pills-${category}`" 
-                                    role="tab" 
-                                    :aria-controls="`v-pills-${category}`" 
-                                    :aria-selected="index === 0"
-                                  >
-                                    {{ category.charAt(0).toUpperCase() + category.slice(1) }}
-                                  </button>
-                                </div>
-                              </div>
-                            </div>
-                           </div>
-                           <div class="col-12 col-md-9" id="abt_skill">
-                             <div class="tab-content" id="v-pills-tabContent">
-                               <div v-for="(category, index) in Object.keys(skills)" :key="category" class="tab-pane fade" :class="{ 'show active': index === 0 }" :id="`v-pills-${category}`" role="tabpanel" :aria-labelledby="`v-pills-${category}-tab`">
-                                 <ul>
-                                   <li v-for="skill in skills[category]" :key="skill">
-                                     <span class="mx-1">{{ skill }}</span>
-                                   </li>
-                                 </ul>
-                               </div>
-                             </div>
-                           </div>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-                     <div class="row">
-                       <div class="col-12">
-                         <div class="card border-0">
-                           <div class="card-body p-3">
-                             <table class="table table-bordered">
-                               <tbody>
-                                 <tr>
-                                   <th>Phone</th>
-                                   <td><span>+8801754100439</span></td>
-                                 </tr>
-                                 <tr>
-                                   <th>Email</th>
-                                   <td><a href="mailto:mdshahinmije96@gmail.com">mdshahinmije96@gmail.com</a></td>
-                                 </tr>
-                                 <tr>
-                                   <th>Address</th>
-                                   <td><span>Dhaka, Bangladesh</span></td>
-                                 </tr>
-                                 <tr>
-                                   <th>Resume</th>
-                                   <td><a href="#" class="btn btn-link">Resume Link</a></td>
-                                 </tr>
-                               </tbody>
-                             </table>
-                           </div>
-                         </div>
-                       </div>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </div>
-     </div>
-   </section>
- </template>
- 
- <script setup>
- import { reactive } from 'vue';
- const myImages = reactive([
-   {"id": 1, "title":"AR Shahin", "path": "/img/my/img3.JPG"},
-   {"id": 2, "title":"AR Shahin", "path": "/img/my/img4.JPG"},
-   {"id": 3, "title":"AR Shahin", "path": "/img/my/img.png"},
-   {"id": 4, "title":"AR Shahin", "path": "/img/my/img.jpg"},
- ]);
- const skills = reactive({
-   frontend: ['BOOTSTRAP',  'Tailwind CSS','JAVASCRIPT', 'JQUERY', 'Vue JS', 'Nuxt JS',],
-   backend: ['PHP', 'LARAVEL', 'Node JS', 'Express JS', 'FAST API', 'Django'],
-   database: ['MYSQL', 'MONGODB', 'SQLite'],
-   AI: ['OpenAI API','Opensource LLM', 'Hugging Face', 'RAG', "Vector DB"],
-   others: ['Wordpress','Docker', 'Cpanel', 'VPS', 'AWS', 'JIRA','Linux'],
- });
+            <div class="experience_badge glass-card">
+              <span class="number">4+</span>
+              <span class="text">Years of <br />Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="about_content ps-lg-5 animate-fade-in-up" style="animation-delay: 0.1s">
+            <div class="sec_title mb-4">
+              <span class="skill_tag">Discovery</span>
+              <h2 class="mt-2">About Me</h2>
+            </div>
+            <p class="text-muted mb-4 lead">
+              I am a Software Engineer based in Dhaka, Bangladesh, with a deep passion for <strong>Artificial Intelligence</strong> and robust <strong>Backend Architectures</strong>.
+            </p>
+            <div class="about_tabs">
+              <div class="d-flex gap-3 mb-4 flex-wrap">
+                <button 
+                  v-for="tab in ['Bio', 'Skills', 'Education']" 
+                  :key="tab"
+                  @click="activeTab = tab"
+                  class="btn-tab"
+                  :class="{ 'active': activeTab === tab }"
+                >
+                  {{ tab }}
+                </button>
+              </div>
 
- </script>
- 
- <style scoped>
- .nav-link,  a{
-    color: #0E1833!important;
-}
- #about_section{
-   background: #fff;
- }
- .skill_btn{
-  background: #0E1833;
-  padding: 5px;
-  color:#fff!important;
-  margin-bottom: 5px;
-  border-radius: 3px;
- }
+              <div v-if="activeTab === 'Bio'" class="tab_pane animate-fade-in-up">
+                <p class="text-muted">
+                  With a background in full-stack development, I currently specialize in <strong>Gen AI</strong> and <strong>LLM integration</strong>. My work at SSL Wireless involves building sophisticated chatbot applications and AI automation systems.
+                </p>
+                <p class="text-muted">
+                  I hold a BSc in Computer Science & Engineering with a CGPA of 3.86. I'm also a content creator, sharing my knowledge through YouTube and my personal blog.
+                </p>
+              </div>
 
- .skill_btn.active{
-  background: #DE4859;
-  color: #fff !important;
- }
- .abt_btn{
-  color: #182c61!important;
- }
- .about_me p{
-  text-align: justify;
- }
- .myImage_slider .owl-dots {
-   display: none;
- }
- .myImage_slider .single-slider-image {
-   position: relative;
- }
- .myImage_slider .single-slider-image .pos_content {
-   position: absolute;
-   right: 0;
-   bottom: 0;
-   background: #6d214f;
-   color: #fff;
-   padding: 10px;
-   border-top-left-radius: 5px;
- }
- #about_section ul li {
-   display: inline-block;
- }
- #about_section ul li span {
-   background: #9D4C36;
-   display: inline-block;
-   padding: 1px 13px;
-   font-size: 14px;
-   font-weight: 500;
-   margin-top: 5px;
-   border-radius: 5px;
-   transition: 0.6s;
-   color: #fff;
- }
- #about_section ul li span:hover {
-   color: #111;
- }
- .myImage_slider {
-  overflow: hidden;
-  width: 100%;
+              <div v-if="activeTab === 'Skills'" class="tab_pane animate-fade-in-up">
+                <div v-for="skillGroup in SKILLS" :key="skillGroup.category" class="mb-3">
+                  <h5 class="skill_group_title small text-uppercase text-primary">{{ skillGroup.category }}</h5>
+                  <div class="d-flex flex-wrap gap-2">
+                    <span v-for="skill in skillGroup.items" :key="skill" class="skill_tag skill_tag_small">
+                      {{ skill }}
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div v-if="activeTab === 'Education'" class="tab_pane animate-fade-in-up">
+                <div class="education_item glass-card p-3 mb-3">
+                  <h5 class="mb-1">BSc in Computer Science & Engineering</h5>
+                  <p class="text-primary mb-1">South-East University</p>
+                  <p class="text-muted small mb-0">CGPA: 3.86 | 2018 - 2022</p>
+                </div>
+                <div class="education_item glass-card p-3">
+                  <h5 class="mb-1">HSC (Science)</h5>
+                  <p class="text-primary mb-1">Gazipur Cantonment Board College</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script setup>
+import { ref } from 'vue';
+import { useDummyData } from '~/composables/useDummyData';
+
+const { SKILLS } = useDummyData();
+const activeTab = ref('Bio');
+</script>
+
+<style lang="scss" scoped>
+.about_image_stack {
   position: relative;
+  padding-right: 40px;
+  padding-bottom: 40px;
 }
 
-.slider-wrapper {
-  display: flex;
-  width: 100%;
-  cursor: grab;
-  user-select: none;
-}
-
-.slider {
-  display: flex;
-  width: max-content;
-  animation: scroll 10s linear infinite;
-}
-
-/* Smooth cyclic animation */
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
+.main_img {
+  padding: 10px;
+  img {
+    filter: grayscale(20%);
+    transition: all 0.5s ease;
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
 }
 
-.slide {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 200px;
-  margin-right: 10px;
-  position: relative;
-}
-
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.pos_content {
+.experience_badge {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
-  background: rgba(0, 0, 0, 0.7);
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 14px;
+  bottom: 0;
+  right: 0;
+  padding: 1.5rem;
+  background: var(--accent-gradient);
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px -5px rgba(14, 165, 233, 0.4);
+
+  .number {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 1;
+  }
+  .text {
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.2;
+  }
 }
 
-/* Pause animation on hover */
-.slider:hover {
-  animation-play-state: paused;
+.btn-tab {
+  background: transparent;
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  padding: 8px 24px;
+  border-radius: 100px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  &:hover {
+    border-color: var(--text-main);
+    color: var(--text-main);
+  }
+  &.active {
+    background: var(--accent-gradient);
+    border-color: transparent;
+    color: white;
+    box-shadow: 0 4px 12px -2px rgba(14, 165, 233, 0.3);
+  }
 }
 
+.skill_tag_small {
+  font-size: 0.75rem;
+  padding: 4px 12px;
+  margin: 0;
+}
 
- </style>
- 
+.skill_group_title {
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+}
+</style>

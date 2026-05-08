@@ -7,48 +7,52 @@ export default defineNuxtConfig({
   },
   app: {
     pageTransition: { name: 'fade', mode: 'out-in' },
+    layoutTransition: { name: 'slide', mode: 'out-in' },
     head: {
-      title: "AR Shahin - AI & Software Engineer",
+      title: "AR Shahin | Software Engineer & AI Specialist",
       meta: [
-        { name: "description", content: "AR Shahin is an AI & Software Engineer specializing in AI, chatbots, and web development." },
-        { name: "keywords", content: "AI, Software Engineer, Chatbots, Web Development, AR Shahin" },
+        { charset: 'utf-8' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: "description", content: "AR Shahin is a Software Engineer specializing in AI, LLMs, and high-performance backend systems. Expert in Laravel, FastAPI, and LangChain." },
+        { name: "keywords", content: "AR Shahin, AI Engineer, Software Engineer, LLM Specialist, Laravel Developer, Python Developer, RAG, LangChain, Portfolio" },
         { name: "author", content: "AR Shahin" },
 
         // Open Graph (Facebook Sharing)
-        { property: "og:title", content: "AR Shahin - AI & Software Engineer" },
-        { property: "og:description", content: "Explore AI projects, software engineering insights, and web development tutorials by AR Shahin." },
-        { property: "og:image", content: "https://www.freeiconspng.com/uploads/work-on-laptop-icon-10.jpg" },
-        { property: "og:url", content: "https://yourwebsite.com" },
+        { property: "og:title", content: "AR Shahin | Software Engineer & AI Specialist" },
+        { property: "og:description", content: "Building the future with AI and robust backend architectures. Explore my projects in Gen AI, RAG, and Web Systems." },
+        { property: "og:image", content: "https://shop.bandhubattery.com/storage/ars/portfolio_og.png" },
+        { property: "og:url", content: "https://arshahin.me" },
         { property: "og:type", content: "website" },
 
-        // Twitter Card (For better Twitter sharing)
+        // Twitter Card
         { name: "twitter:card", content: "summary_large_image" },
-        { name: "twitter:title", content: "AR Shahin - AI & Software Engineer" },
-        { name: "twitter:description", content: "Explore AI projects, software engineering insights, and web development tutorials by AR Shahin." },
-        { name: "twitter:image", content: "https://www.freeiconspng.com/uploads/work-on-laptop-icon-10.jpg" }
+        { name: "twitter:title", content: "AR Shahin | Software Engineer & AI Specialist" },
+        { name: "twitter:description", content: "Building the future with AI and robust backend architectures." },
+        { name: "twitter:image", content: "https://shop.bandhubattery.com/storage/ars/portfolio_og.png" }
       ],
       link: [
         {
-          href: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500&display=swap",
+          href: "https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap",
           rel: "stylesheet"
         },
         {
-          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css",
+          href: "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css",
           rel: "stylesheet"
         },
         {
-          href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css",
+          href: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css",
           rel: "stylesheet"
         },
         {
           href: "https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css",
           rel: "stylesheet"
         },
-        { rel: "icon", type: "image/png", href: "https://www.freeiconspng.com/uploads/work-on-laptop-icon-10.jpg" }
+        { rel: "icon", type: "image/png", href: "https://shop.bandhubattery.com/storage/ars/favicon.png" }
       ],
       script: [
         {
-          src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+          src: "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js",
+          tagPosition: 'bodyClose'
         }
       ]
     }
@@ -57,6 +61,6 @@ export default defineNuxtConfig({
     "@/assets/css/main.css",
     "@/assets/css/responsive.css",
   ],
-  plugins: [],
   modules: ['@pinia/nuxt'],
 });
+

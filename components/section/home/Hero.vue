@@ -1,99 +1,90 @@
 <template>
-  <div id="hero-section">
-      <div class="hero-content">
-          <div class="container">
-              <div class="row">
-                  <div class="col-12 col-sm-6 col-md-6 align-self-center">
-                      <div class="hero-text">
-                          <span class="intro" style="display: inline-block">Hello, I'm</span>
-                          <h1 class="">Anisur Rahman Shahin</h1>
-                          <div class="tagline">
-                              <div class="cd-intro">
-                                 <em style="color:#be2edd">Software Engineer</em>
-                              </div> 
-                          </div>
-                          <div class="hero-social-media">
-                              <ul>
-                                  <li><a  href="https://www.facebook.com/arshahin201" target="_blank"><i class="fab fa-facebook"></i></a></li>
-                                  <li><a target="_blank"><i class="fab fa-twitter"></i></a></li>
-                                  <li><a href="https://github.com/AR-Shahin" target="_blank"><i class="fab fa-github"></i></a></li>
-                                  <li><a href="https://www.youtube.com/@arshahin9803" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                                  <li><a href="https://www.linkedin.com/in/arshahin/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-12 col-sm-6 col-md-6 text-center">
-                      <img src="~assets/img/hero.png" alt="" class="img-fluid" style="animation-name: HERO_ANIMATION; animation-duration: 5s; animation-iteration-count: infinite; width:100%">
-                  </div>
-              </div>
+  <section class="hero_section">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="hero_content animate-fade-in-up">
+            <span class="skill_tag mb-3">Available for AI & Backend Projects</span>
+            <h1 class="hero_title">
+              Crafting Intelligent <br />
+              Digital Experiences
+            </h1>
+            <p class="hero_subtitle">
+              Hello, I'm <strong>AR Shahin</strong>. A Software Engineer & AI Specialist dedicated to building high-performance backend systems and innovative Gen AI solutions.
+            </p>
+            <div class="d-flex flex-wrap gap-3 mb-5">
+              <a href="#portfolio_section" class="btn-primary-modern">View Projects</a>
+              <a href="#contact_section" class="btn-outline-modern">Let's Talk</a>
+            </div>
+            <div class="hero_socials d-flex gap-4">
+              <a href="https://github.com/AR-Shahin" target="_blank" class="social_link"><i class="fab fa-github"></i></a>
+              <a href="https://linkedin.com/in/arshahin/" target="_blank" class="social_link"><i class="fab fa-linkedin"></i></a>
+              <a href="https://www.youtube.com/@arshahin9803" target="_blank" class="social_link"><i class="fab fa-youtube"></i></a>
+            </div>
           </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block">
+          <div class="hero_image_container animate-fade-in-up" style="animation-delay: 0.2s">
+            <div class="glow_blob"></div>
+            <img src="~assets/img/hero.png" alt="AR Shahin" class="img-fluid floating_img" />
+          </div>
+        </div>
       </div>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
 </script>
 
 <style lang="scss" scoped>
-#hero-section {
-padding: 100px 0 10px 0 !important;
-
-.hero-text {
-  text-align: left;
-  .intro {
-    font-size: 18px;
-    font-weight: 400;
-  }
-  h1 {
-    margin: 5px 0;
-    font-weight: 600;
+.social_link {
+  font-size: 1.5rem;
+  color: var(--text-muted);
+  transition: all 0.3s ease;
+  &:hover {
+    color: var(--primary-color);
+    transform: translateY(-3px);
   }
 }
+
+.hero_image_container {
+  position: relative;
+  z-index: 1;
 }
 
-.hero-social-media {
-margin-top: 20px;
-ul {
-  display: flex;
-  padding: 0;
-  li {
-    display: inline-block;
-    margin-right: 10px;
-    background: #55e6c1;
-    height: 40px;
-    width: 40px;
-    display: flex;
-    align-items: center;
+.glow_blob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120%;
+  height: 120%;
+  background: var(--accent-gradient);
+  filter: blur(80px);
+  opacity: 0.15;
+  z-index: -1;
+  border-radius: 50%;
+  animation: glow 8s infinite alternate;
+}
+
+.floating_img {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+@media (max-width: 991px) {
+  .hero_section {
+    padding-top: 120px;
+    text-align: center;
     justify-content: center;
-    color: #2d3436;
-    border: 1.5px solid transparent;
-    transition: 0.6s;
-    cursor: pointer;
-    a {
-      color: #fff;
-      font-size: 18px;
-    }
-    &:nth-child(1) {
-      background: #3b5999;
-    }
-    &:nth-child(2) {
-      background: #55acee;
-    }
-    &:nth-child(3) {
-      background: #09b83e;
-    }
-    &:nth-child(4) {
-      background: #cd201f;
-    }
-    &:nth-child(5) {
-      background: #0077b5;
-    }
-    &:hover {
-      border: 1.5px solid #f1c40f;
-      margin-top: -5px;
-    }
   }
-}
+  .hero_socials {
+    justify-content: center;
+  }
 }
 </style>

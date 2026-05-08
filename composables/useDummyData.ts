@@ -1,215 +1,205 @@
-export function useDummyData() {
+export const useDummyData = () => {
 
-    const PROJECTS : any = [
+    const PROJECTS = [
         {
-            name: "News Portal",
+            name: "Lilyra AI Platform",
+            image: "https://shop.bandhubattery.com/storage/ars/lilyra_main.png",
+            viewLink: "#",
+            category: "AI & Automation",
+            liveLink: "https://lilyra.com",
+            description: "An AI-driven automation platform for F-commerce and customer support. It features real-time messaging, brand-aware LLM models, and automated order processing. Built to streamline business operations using cutting-edge AI technologies.",
+            features: ["AI Chatbots", "Real-time Messaging", "Order Automation", "Brand-aware Models"],
+            technologies: ["FastAPI", "LangChain", "OpenAI", "Nuxt.js", "Redis"],
+            slug: "lilyra-ai-platform",
+            is_front: true,
+            order: 1,
+            extra_images: []
+        },
+        {
+            name: "AI Cover Letter Generator",
+            image: "https://shop.bandhubattery.com/storage/ars/cover_letter_gen.png",
+            viewLink: "#",
+            category: "Gen AI",
+            liveLink: "https://lilyra.com/tools/cover-letter",
+            description: "A specialized AI tool that generates professional, tailored cover letters based on user resumes and job descriptions. Leverages LLMs for high-quality, context-aware writing.",
+            features: ["PDF Parsing", "Tailored Content Generation", "Multiple Templates"],
+            technologies: ["FastAPI", "LangChain", "React", "OpenAI"],
+            slug: "ai-cover-letter-generator",
+            is_front: true,
+            order: 2,
+            extra_images: []
+        },
+        {
+            name: "FNS24 News Portal",
             image: "https://shop.bandhubattery.com/storage/ars/1741793769_67d1a9e9b1ce5.png",
             viewLink: "#",
-            category : "Laravel",
+            category: "Web App",
             liveLink: "https://www.fns24.com",
-            description: "A comprehensive news portal delivering real-time updates, breaking news, and trending stories from around the world. Designed with a user-friendly interface, it ensures seamless navigation through various categories, including politics, sports, entertainment, and technology. With integrated API connections, it fetches the latest news from multiple sources, providing users with verified and credible information. The platform includes user authentication for personalized news feeds, bookmarking, and comment features. Built with Laravel and Vue.js, it offers an engaging and interactive experience. Real-time updates ensure that users never miss important events, making it a reliable and dynamic source for daily news consumption.",
-            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["HTML", "CSS", "JavaScript", "Vue.js", "Firebase"],
-            youtube : "http://youtube.",
-            slug : "fns-news-portal-main",
+            description: "A high-frequency news publishing platform delivering real-time updates. Designed for high scalability and performance, handling thousands of concurrent users.",
+            features: ["Real-time Updates", "Search Optimization", "Scalable Architecture", "Ad Management"],
+            technologies: ["Laravel", "Vue.js", "MySQL", "Redis"],
+            slug: "fns24-news-portal",
             is_front: true,
-            order : 1,
-            extra_images : [
-                "https://shop.bandhubattery.com/storage/ars/1741793769_67d1a9e9b1ce5.png",
-            ]
-          },
-          {
-            name: "News Paper List",
-            image : "https://i.ibb.co.com/FkG84LcG/prt2.png",
+            order: 3,
+            extra_images: []
+        },
+        {
+            name: "Disaster Alert for BD",
+            image: "https://shop.bandhubattery.com/storage/ars/disaster_alert.png",
             viewLink: "#",
-            liveLink: "https://newspaperlist.org",
-            category : "Laravel",
-            description: "A digital platform that aggregates and categorizes newspapers from different regions, allowing users to access and read their favorite publications in one place. The system provides real-time updates, ensuring readers get the latest headlines without delay. With a clean and responsive design, the portal enhances the reading experience by offering multiple viewing options, including dark mode and font customization. Developed with Laravel and Vue.js, it ensures smooth performance and high scalability. API integration allows users to subscribe to specific news sources, receive alerts, and explore trending topics globally, making it a one-stop solution for newspaper enthusiasts.",
-            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["HTML", "CSS", "JavaScript", "Vue.js", "Firebase"],
-            youtube : "http://youtube.",
-            slug : "fns-news-portal",
-            is_front: true,
-            order : 2,
-            extra_images : [
-                "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
-            ]
-          },
-          {
-            name: "Converter ",
-            image : "https://i.ibb.co.com/xK371c1H/pr3.png",
-            viewLink: "#",
-            category : "Laravel",
-            liveLink: "https://freebanglaconverter.com",
-            description: "A powerful and easy-to-use online tool for converting Bangla text into different formats, including Unicode, Bijoy, and ANSI. Designed to facilitate seamless communication and document preparation, this converter is ideal for students, professionals, and publishers who frequently work with Bangla text. Built with Laravel, it provides a fast and efficient conversion process with minimal input from users. The responsive interface ensures smooth performance across all devices. Additional features include text formatting, copy-paste support, and downloadable results. With its real-time processing, users can quickly transform their text into the required format without the need for external software.",
-            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["HTML", "CSS", "JavaScript", "Vue.js", "Firebase"],
-            youtube : "http://youtube.",
-            slug : "news-portal",
-            is_front: true,
-            order : 3,
-            extra_images : [
-                "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
-            ]
-          },
-          {
-            name: "News Portal",
-            image : "https://i.ibb.co.com/1GFZVCmy/pr4.png",
-            viewLink: "#",
+            category: "Mobile & Social Impact",
             liveLink: "#",
-            category : "Laravel",
-            description: "A news portal that provides users with real-time news updates, breaking news, and popular stories from around the world.",
-            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["HTML", "CSS", "JavaScript", "Vue.js", "Firebase"],
-            youtube : "http://youtube.",
-            slug : "news-portal-raw",
+            description: "A real-time emergency response system for Bangladesh. Features include location-based rescue requests, weather alerts, and automated emergency SMS notifications.",
+            features: ["Location Tracking", "Automated SMS", "Real-time Alerts", "Emergency Contacts"],
+            technologies: ["Flutter", "Firebase", "Node.js", "Google Maps API"],
+            slug: "disaster-alert-bd",
             is_front: true,
-            order : 4,
-            extra_images : [
-                "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
-            ]
-          },
-          {
-            name: "Institute Management System",
-            image : "https://shop.bandhubattery.com/storage/ars/1741868916_67d2cf74bc389.png",
+            order: 4,
+            extra_images: []
+        },
+        {
+            name: "RAG-Based LLM Chatbot",
+            image: "https://shop.bandhubattery.com/storage/ars/rag_chatbot.png",
             viewLink: "#",
-            liveLink: "https://demo.automate.com.bd/",
-            category : "Laravel",
-            description: "A comprehensive platform designed for educational institutions to streamline administrative tasks such as student enrollment, class scheduling, attendance tracking, and fee management. The system provides a centralized dashboard for teachers, students, and administrators to monitor academic progress and institutional activities efficiently. Built with Laravel and Nuxt.js, it offers a seamless user experience with role-based access control. API integration allows automated notifications, report generation, and digital records management. With real-time updates, it ensures smooth communication between faculty, parents, and students. Its cloud-based architecture enhances security and scalability, making it an ideal solution for schools, colleges, and training centers. ",
-            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["Bootstrap", "Nuxt JS", "Laravel", "MYSQL"],
-            youtube : "http://youtube.",
-            slug : "Institute-Management-System",
+            category: "AI & ML",
+            liveLink: "#",
+            description: "An intelligent chatbot system utilizing Retrieval-Augmented Generation (RAG). It scrapes web content and uses semantic search to provide accurate, context-rich answers based on specific data sources.",
+            features: ["Web Scraping", "Semantic Search", "Vector Database", "Contextual Accuracy"],
+            technologies: ["Python", "LangChain", "ChromaDB", "FastAPI"],
+            slug: "rag-llm-chatbot",
             is_front: true,
-            order : 5,
-            extra_images : [
-                "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
-            ]
-          },
-          {
-            name: "Inventory Management System",
-            image : "https://shop.bandhubattery.com/storage/ars/1741869353_67d2d129726e1.png",
+            order: 5,
+            extra_images: []
+        },
+        {
+            name: "Breast Cancer Detection Research",
+            image: "https://shop.bandhubattery.com/storage/ars/research_cancer.png",
             viewLink: "#",
-            liveLink: "https://bandhubattery.com/",
-            category : "Laravel",
-            description: "A robust system designed to help businesses track and manage their inventory efficiently. This platform enables users to monitor stock levels, manage suppliers, generate invoices, and analyze sales trends. Built with Laravel and MySQL, it ensures a reliable and scalable infrastructure. The system integrates with Google Drive for secure data backup and cloud storage. Real-time analytics and reporting features provide business owners with valuable insights into their stock movement and purchasing patterns. The user-friendly interface makes inventory tracking seamless, reducing operational costs and preventing stock shortages. Ideal for retail businesses, warehouses, and e-commerce platforms. ",
-            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["Bootstrap", "Laravel", "MYSQL","Google Drive"],
-            youtube : "http://youtube.",
-            slug : "inventory-Management-System-bandhu-battery",
+            category: "Research",
+            liveLink: "https://www.mdpi.com/",
+            description: "A deep learning-based research project for early detection of breast cancer. Achieved a 93% accuracy rate using CNN models. Published in a peer-reviewed MDPI journal.",
+            features: ["Image Classification", "Deep Learning Models", "93% Accuracy", "Clinical Data Analysis"],
+            technologies: ["Python", "TensorFlow", "Keras", "Scikit-learn"],
+            slug: "breast-cancer-detection",
             is_front: true,
-            order : 6,
-            extra_images : [
-                "https://projectsly.com/images/blog/best-project-design.png?v=1686553999071005322",
-            ]
-          },
-          {
-            name: "Sultan Shah Party",
-            image : "https://shop.bandhubattery.com/storage/ars/1741876354_67d2ec82681da.png",
-            viewLink: "#",
-            liveLink: "https://sultanshahparties.com/",
-            category : "Wordpress",
-            description: "A premium website for Sultan Shah Parties & Entertainment Services, one of the leading entertainment and event technology suppliers in the Middle East and North African region. This platform provides a showcase of their services, event planning expertise, and portfolio of successful projects. The website features a sleek and modern design, ensuring a smooth browsing experience for clients. Built on WordPress, it includes a booking system, client testimonials, and a dynamic gallery. API integration allows event organizers to request quotes and schedule consultations seamlessly. With its professional and engaging interface, the platform effectively promotes the brand's services and capabilities.",
-            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["Wordpress"],
-            youtube : "http://youtube.",
-            slug : "Sultan-Shah-Party",
-            is_front: true,
-            order : 7,
-            extra_images : [
-                "https://shop.bandhubattery.com/storage/ars/1741876354_67d2ec82681da.png",
-            ]
-          },
-          {
-            name: "Charity",
-            image : "https://shop.bandhubattery.com/storage/ars/1741876462_67d2ecee7ea0c.png",
-            viewLink: "#",
-            liveLink: "https://manobiksebafoundation.org/",
-            category : "Wordpress",
-            description: "A non-profit platform dedicated to managing and organizing charity initiatives. The website provides a structured approach to fundraising, volunteer management, and donation tracking. Built with Laravel and MySQL, it offers secure payment gateway integration for accepting donations. The system features real-time updates, ensuring transparency in fund distribution. Users can browse ongoing projects, sponsor specific causes, and track their contributions. API integration enables automated receipts and impact reports for donors. The responsive design ensures accessibility across devices, making it easier for people to participate in charitable activities. This platform empowers organizations to efficiently manage their humanitarian efforts.",
-            features: ["Front-end development", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["Laravel","MySQL"],
-            youtube : "http://youtube.",
-            slug : "Charity-manobik-sheba",
-            is_front: true,
-            order : 7,
-            extra_images : [
-                "https://shop.bandhubattery.com/storage/ars/1741876462_67d2ecee7ea0c.png",
-            ]
-          },
-          {
-            name: "Restaurant Landing Page",
-            image : "https://shop.bandhubattery.com/storage/ars/1741933220_67d3caa437fbb.png",
-            viewLink: "#",
-            liveLink: "https://www.food.toolsyoulove.com/",
-            category : "Wordpress",
-            description: "A visually appealing and conversion-focused landing page for restaurants, designed to enhance online presence and drive customer engagement. Built with WordPress and WooCommerce, it provides seamless integration for online reservations, menu showcasing, and customer inquiries. The page features high-quality images, a sleek user interface, and responsive design for optimal performance on all devices. With API integration, restaurants can accept online orders, integrate with delivery platforms, and collect customer feedback. Real-time updates ensure that promotions, special offers, and new menu items are easily accessible. The intuitive design enhances user experience, making it an essential tool for modern restaurants.",
-            features: ["Food", "API integration", "User authentication", "Real-time updates"],
-            technologies: ["Wordpress","Wocommerce"],
-            youtube : "http://youtube.",
-            slug : "Restaurant-Landing-Page",
-            is_front: true,
-            order : 8,
-            extra_images : [
-                "https://shop.bandhubattery.com/storage/ars/1741933220_67d3caa437fbb.png",
-            ]
-          },
-          {
-            name: "Ecommerce",
-            image : "https://shop.bandhubattery.com/storage/ars/1741933382_67d3cb4673945.png",
-            viewLink: "#",
-            liveLink: "https://www.shop.toolsyoulove.com/",
-            category : "Wordpress",
-            description: "A fully functional e-commerce platform tailored for online stores, offering a seamless shopping experience with secure payment options, product catalogs, and customer management features. Built with WordPress and WooCommerce, it supports multiple product categories, inventory tracking, and automated order processing. The website integrates real-time stock updates, ensuring customers always have access to accurate product availability. API connections allow smooth payment gateway integration and third-party logistics support. With a mobile-friendly design and user-friendly navigation, it enhances customer engagement and boosts sales. This platform is perfect for businesses looking to establish or expand their digital retail presence.",
-            features: ["Shop", "Ecommerce", "User authentication", "Real-time updates"],
-            technologies: ["Wordpress","Wocommerce"],
-            youtube : "http://youtube.",
-            slug : "Ecommerce-one",
-            is_front: true,
-            order : 9,
-            extra_images : [
-                "https://shop.bandhubattery.com/storage/ars/1741933382_67d3cb4673945.png",
-            ]
-          },
-          {
-            name: "Ecommerce",
-            image : "https://shop.bandhubattery.com/storage/ars/1742016993_67d511e18289c.png",
-            viewLink: "#",
-            liveLink: "https://khadikabbo.com/",
-            category : "Wordpress",
-            description: "A fully functional e-commerce platform tailored for online stores, offering a seamless shopping experience with secure payment options, product catalogs, and customer management features. Built with WordPress and WooCommerce, it supports multiple product categories, inventory tracking, and automated order processing. The website integrates real-time stock updates, ensuring customers always have access to accurate product availability. API connections allow smooth payment gateway integration and third-party logistics support. With a mobile-friendly design and user-friendly navigation, it enhances customer engagement and boosts sales. This platform is perfect for businesses looking to establish or expand their digital retail presence.",
-            features: ["Shop", "Ecommerce", "User authentication", "Real-time updates"],
-            technologies: ["Wordpress","Wocommerce"],
-            youtube : "http://youtube.",
-            slug : "Ecommerce-khadikabbo",
-            is_front: true,
-            order : 9,
-            extra_images : [
-                "https://shop.bandhubattery.com/storage/ars/1742016993_67d511e18289c.png",
-            ]
-          },
-          {
-            name: "Ecommerce",
-            image : "https://shop.bandhubattery.com/storage/ars/1742017042_67d51212c23b0.png",
-            viewLink: "#",
-            liveLink: "https://krisnachura.com.bd/",
-            category : "Wordpress",
-            description: "A fully functional e-commerce platform tailored for online stores, offering a seamless shopping experience with secure payment options, product catalogs, and customer management features. Built with WordPress and WooCommerce, it supports multiple product categories, inventory tracking, and automated order processing. The website integrates real-time stock updates, ensuring customers always have access to accurate product availability. API connections allow smooth payment gateway integration and third-party logistics support. With a mobile-friendly design and user-friendly navigation, it enhances customer engagement and boosts sales. This platform is perfect for businesses looking to establish or expand their digital retail presence.",
-            features: ["Shop", "Ecommerce", "User authentication", "Real-time updates"],
-            technologies: ["Wordpress","Wocommerce"],
-            youtube : "http://youtube.",
-            slug : "Ecommerce-Krisnochura",
-            is_front: true,
-            order : 9,
-            extra_images : [
-                "https://shop.bandhubattery.com/storage/ars/1742017042_67d51212c23b0.png",
-            ]
-          },
+            order: 6,
+            extra_images: []
+        }
     ]
-    
 
+    const SKILLS = [
+        {
+            category: "AI & Machine Learning",
+            items: ["LangChain", "RAG", "LLM Agents", "NLP", "Semantic Search", "OpenAI API", "TensorFlow", "PyTorch"]
+        },
+        {
+            category: "Backend Development",
+            items: ["Laravel", "FastAPI", "Django", "Node.js", "Express", "RESTful APIs", "Microservices"]
+        },
+        {
+            category: "Frontend & UI",
+            items: ["Nuxt.js", "Vue.js", "React.js", "Tailwind CSS", "Bootstrap", "Modern CSS/SCSS"]
+        },
+        {
+            category: "Database & DevOps",
+            items: ["MySQL", "MongoDB", "PostgreSQL", "Redis", "Docker", "AWS", "VPS", "CI/CD"]
+        }
+    ]
+
+    const EXPERIENCE = [
+        {
+            company: "JB Connect Ltd.",
+            role: "Intermediate Software Engineer",
+            period: "Oct 2025 - Present",
+            description: "Focusing on Backend development, AWS infrastructure, and Generative AI solutions.",
+            points: [
+                "Developing scalable backend systems with Laravel and FastAPI.",
+                "Managing and optimizing AWS cloud infrastructure.",
+                "Implementing advanced Generative AI features for enterprise applications."
+            ]
+        },
+        {
+            company: "SSL Wireless",
+            role: "Software Specialist",
+            period: "Feb 2025 - Oct 2025",
+            description: "Specializing in Backend Development and R&D for GEN AI and LLM-based projects.",
+            points: [
+                "Designed and implemented scalable REST APIs and robust MySQL architectures.",
+                "Integrated third-party APIs (Meta, Telegram, Google Dialogflow) for automation.",
+                "Led POC developments for AI-driven solutions and provided technical support."
+            ]
+        },
+        {
+            company: "SSL Wireless",
+            role: "Software Associate",
+            period: "Jan 2024 - Feb 2025",
+            description: "Focused on developing and maintaining web applications using Laravel, Django, and FastAPI.",
+            points: [
+                "Architected robust MySQL databases and designed RESTful API systems.",
+                "Managed Docker-based environments for efficient deployment and scalability.",
+                "Conducted R&D for GenAI projects with a focus on chatbot development."
+            ]
+        },
+        {
+            company: "Automate IT Limited",
+            role: "Software Developer (Part-time)",
+            period: "Oct 2023 - Dec 2023",
+            description: "Full-stack developer focusing on REST API development and frontend integration.",
+            points: [
+                "Developed REST APIs using Laravel and integrated them with Nuxt.js.",
+                "Designed web pages from Figma designs using Bootstrap and modern CSS.",
+                "Worked on Academy IMS and other demo products."
+            ]
+        },
+        {
+            company: "Fair News Service Ltd",
+            role: "Software Developer",
+            period: "Jul 2022 - Aug 2023",
+            description: "Full-stack developer for a high-frequency news service agency (fns24.com).",
+            points: [
+                "Developed the core news portal using Laravel and MySQL.",
+                "Implemented frontend designs using Jquery and Bootstrap.",
+                "Maintained account management, shop, and news distribution systems."
+            ]
+        },
+        {
+            company: "Zakir Soft",
+            role: "Full-stack Developer (Intern)",
+            period: "May 2021 - Dec 2021",
+            description: "Working on SASS-based products with Laravel, Vue, and Nuxt.js.",
+            points: [
+                "Developed REST APIs for internal SASS products.",
+                "Integrated backend services into modern Vue/Nuxt frontends.",
+                "Collaborated on database design and Git-based version control."
+            ]
+        }
+    ]
+
+    const ACHIEVEMENTS = [
+        {
+            title: "Research Publication",
+            organization: "MDPI Journal",
+            date: "2022",
+            description: "Early Detection of Breast Cancer Using Deep Learning (CNN). Published in a peer-reviewed international journal."
+        },
+        {
+            title: "Top Contributor",
+            organization: "Open Source Communities",
+            date: "Ongoing",
+            description: "Active contributor to various PHP and Python open-source projects, including the Doppar framework."
+        },
+        {
+            title: "BSc in CSE - CGPA 3.86",
+            organization: "South-East University",
+            date: "2022",
+            description: "Graduated with high honors and a focus on software engineering and artificial intelligence."
+        }
+    ]
 
     return {
-        PROJECTS
+        PROJECTS,
+        SKILLS,
+        EXPERIENCE,
+        ACHIEVEMENTS
     }
 }

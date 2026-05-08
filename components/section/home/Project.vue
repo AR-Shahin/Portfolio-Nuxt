@@ -1,130 +1,86 @@
 <template>
-    <section id="portfolio_section">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col-12">
-            <div class="sec_title wow animate__animated animate__zoomIn">
-              <h2 class="mb-0 pb-1">My Portfolio</h2>
-              <p class="m-0 p-0">Few of my best projects!</p>
-            </div>
-          </div>
-        </div>
-        <div class="row gx-3">
-          <div v-for="(project, index) in projects" :key="index" class=" col-12 col-sm-6 col-md-3 mb-3 wow animate__animated">
-            <div class="service_box shadow">
-              <div v-if="project.image" class="img_container">
-                <img :src="project.image" :alt="project.name" class="img-fluid" />
-                <h5 class="project_name">{{ project.name }}</h5>
-                <div class="hover_overlay">
-                  <div class="hover_links">
-                    <nuxt-link :to="`/project/${project.slug}`">Details</nuxt-link>
-                    <a :href="project.liveLink" target="_blank">Live Link</a>
-                    <h5 class="project_name">{{ project.name }}</h5>
-                  </div>
-                </div>
+  <section id="portfolio_section" class="py-5">
+    <div class="container">
+      <div class="sec_title text-center mb-5 animate-fade-in-up">
+        <span class="skill_tag">My Work</span>
+        <h2 class="mt-2">Featured Projects</h2>
+        <p class="text-muted">A collection of AI, Backend, and Full-stack applications.</p>
+      </div>
+
+      <div class="row g-4">
+        <div 
+          v-for="(project, index) in projects" 
+          :key="index" 
+          class="col-12 col-md-6 col-lg-4 animate-fade-in-up"
+          :style="{ animationDelay: (index * 0.1) + 's' }"
+        >
+          <div class="glass-card project_card">
+            <div class="project_img_wrapper">
+              <img :src="project.image" :alt="project.name" loading="lazy" />
+              <div class="project_overlay">
+                <nuxt-link :to="`/project/${project.slug}`" class="btn-primary-modern btn-sm">Details</nuxt-link>
+                <a v-if="project.liveLink !== '#'" :href="project.liveLink" target="_blank" class="btn-outline-modern btn-sm ms-2">Live Demo</a>
               </div>
+            </div>
+            <div class="project_content">
+              <div class="project_category">{{ project.category }}</div>
+              <h3 class="project_name">{{ project.name }}</h3>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span v-for="tech in project.technologies.slice(0, 3)" :key="tech" class="tech_pill">{{ tech }}</span>
+              </div>
+              <p class="project_desc text-muted small">{{ project.description.substring(0, 100) }}...</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  </template>
-  
-  <script setup>
-    const { PROJECTS } = useDummyData();
-    const projects = ref([]);
+    </div>
+  </section>
+</template>
 
+<script setup>
+import { useDummyData } from '~/composables/useDummyData';
 
-    onMounted(()=>{
-      projects.value = PROJECTS.filter((p) => p.is_front);
-    })
-   </script>
-  
-  <style lang="scss" scoped>
-  .service_box {
-    position: relative;
-    overflow: hidden;
-    border-radius: 8px;
-    cursor: pointer;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2), 
-    0 6px 6px rgba(0, 0, 0, 0.15); /* 3D Shadow Effect */
-  }
+const { PROJECTS } = useDummyData();
+const projects = ref([]);
 
-  .service_box img {
-    width: 100%;
-    display: block;
-    border-radius: 8px;
-    opacity: 0.9;
-    transition: opacity 0.3s ease-in-out;
-    height: 190px;
-    object-fit: cover;
-  }
-  
-  .project_name {
-    position: absolute;
-    left: 5px;
-    bottom: 0;
-    background: #0E1833;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
-    font-size: 16px;
-  }
-  
-  .hover_overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #0e1833be;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-  }
-  
-  .hover_links {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .hover_links a {
-    color: #fff;
-    text-decoration: none;
-    padding: 8px 12px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    transition: background 0.3s ease-in-out;
-  }
-  
-  .hover_links a:hover {
-    background: rgba(255, 255, 255, 0.5);
-  }
-  
-  .service_box:hover .hover_overlay {
-    opacity: 1;
-  }
-  
-  .service_box:hover img {
-    opacity: 1;
-  }
-  
-  #service_section {
-    text-align: center;
-    .img_box {
-      width: 80px;
-      margin: 0 auto;
-      padding: 8px;
-      border: 2px dotted #1b9cfc;
-    }
-    h4 {
-      margin: 8px 0;
-      font-weight: 600;
-      color: #2c3a47;
-    }
-  }
-  </style>
-  
+onMounted(() => {
+  projects.value = PROJECTS.filter((p) => p.is_front);
+});
+</script>
+
+<style lang="scss" scoped>
+.project_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(2, 6, 23, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(4px);
+}
+
+.project_card:hover .project_overlay {
+  opacity: 1;
+}
+
+.tech_pill {
+  font-size: 0.7rem;
+  padding: 2px 8px;
+  background: rgba(14, 165, 233, 0.1);
+  color: var(--primary-color);
+  border-radius: 4px;
+  border: 1px solid rgba(14, 165, 233, 0.2);
+}
+
+.project_desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+</style>

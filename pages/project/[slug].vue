@@ -1,47 +1,102 @@
 <template>
-    <div>
-        <section id="single_project" v-if="project">
-            <div class="container">
-                <a href="/#portfolio_section" class="btn btn-sm btn-success mb-2">Back</a>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img :src="project.image" alt="" class="w-100">
-                    </div>
-                    <div class="col-md-6">
-                        <h2>{{ project.name }}</h2>
-                        <p style="text-align: justify;line-height: 1.7;">{{ project.description }}</p>
-                        <p>Technologies: <span class="badge bg-primary mx-1" v-for="feature in project.technologies" :key="feature">{{ feature }}</span></p>
-                        <p>Features: <span class="badge bg-success mx-1" v-for="feature in project.features" :key="feature">{{ feature }}</span></p>
-                      
-                        <p>Live Link : <a :href="project.liveLink" class="btn-link" target="_blank">Have a tour.</a></p>
-                       
-                    </div>
-                </div>
-              
-            </div>
-        </section>
+  <div class="project_detail_page py-5">
+    <div class="container mt-5 pt-5" v-if="project">
+      <nuxt-link to="/" class="btn-outline-modern btn-sm mb-4">
+        <i class="bx bx-left-arrow-alt"></i> Back to Portfolio
+      </nuxt-link>
+      
+      <div class="row g-5">
+        <div class="col-lg-7 animate-fade-in-up">
+          <div class="glass-card p-2">
+            <img :src="project.image" :alt="project.name" class="img-fluid rounded w-100 shadow-lg" />
+          </div>
+        </div>
         
+        <div class="col-lg-5 animate-fade-in-up" style="animation-delay: 0.1s">
+          <div class="project_info">
+            <span class="skill_tag">{{ project.category }}</span>
+            <h1 class="mt-2 mb-4">{{ project.name }}</h1>
+            
+            <div class="mb-4">
+              <h5 class="section_subtitle">The Challenge</h5>
+              <p class="text-muted">{{ project.description }}</p>
+            </div>
+
+            <div class="mb-4">
+              <h5 class="section_subtitle">Key Features</h5>
+              <ul class="feature_list list-unstyled">
+                <li v-for="feature in project.features" :key="feature" class="mb-2">
+                  <i class="bx bx-check-circle text-primary me-2"></i> {{ feature }}
+                </li>
+              </ul>
+            </div>
+
+            <div class="mb-5">
+              <h5 class="section_subtitle">Stack Used</h5>
+              <div class="d-flex flex-wrap gap-2">
+                <span v-for="tech in project.technologies" :key="tech" class="skill_tag skill_tag_small">
+                  {{ tech }}
+                </span>
+              </div>
+            </div>
+
+            <div class="action_buttons d-flex gap-3">
+              <a v-if="project.liveLink !== '#'" :href="project.liveLink" target="_blank" class="btn-primary-modern w-100 text-center">Live Preview</a>
+              <a href="https://github.com/AR-Shahin" target="_blank" class="btn-outline-modern w-100 text-center">Source Code</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+    
+    <div v-else class="container text-center py-5">
+      <div class="spinner-border text-primary" role="status"></div>
+      <p class="mt-3 text-muted">Loading project details...</p>
+    </div>
+  </div>
 </template>
 
 <script setup>
-    const { PROJECTS } = useDummyData();
-    const project = ref(null);
+import { ref, onMounted } from 'vue';
+import { useRoute } from 'vue-router';
+import { useDummyData } from '~/composables/useDummyData';
 
+const { PROJECTS } = useDummyData();
+const project = ref(null);
+const route = useRoute();
 
-    onMounted(()=>{
-      project.value = PROJECTS.find((p) => p.slug == useRoute().params.slug);
-    })
+onMounted(() => {
+  const foundProject = PROJECTS.find((p) => p.slug === route.params.slug);
+  if (foundProject) {
+    project.value = foundProject;
+  }
+});
 </script>
 
 <style lang="scss" scoped>
- 
-    #single_project{
-        margin-top: 80px;
-    }
+.project_detail_page {
+  min-height: 100vh;
+  background-color: var(--bg-darker);
+}
 
-    .btn-link{
-        color: teal!important;
-        text-decoration: none;
-    }
+.section_subtitle {
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--text-main);
+  margin-bottom: 1rem;
+}
+
+.feature_list {
+  li {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+  }
+}
+
+.skill_tag_small {
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 0.8rem;
+}
 </style>
